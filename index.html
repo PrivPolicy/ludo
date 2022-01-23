@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./app.js" type="module"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="game">
+            <div id="player-display">
+                <div id="players">
+                    <div class="player">Waiting...</div>
+                    <div class="player">Waiting...</div>
+                    <div class="player">Waiting...</div>
+                    <div class="player">Waiting...</div>
+                </div>
+                <div id="player-ready">Not ready</div>
+                <div id="game-timer"></div>
+            </div>
+            <div id="game-display" class="hidden">
+                <div id="canvas-container">
+                    <canvas id="canvas"></canvas>
+                    <div id="next-move-visualizer"></div>
+                    <div id="canvas-pawns"></div>
+                </div>
+                <div id="game-other">
+                    <div id="dice-controls">
+                        <div id="dice-roll">Roll the dice</div>
+                        <div id="dice-result"></div>
+                    </div>
+                    <div id="dice-image"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="join-overlay">
+            <div id="username-container">
+                <input id="username" autocomplete="off" placeholder="Nick" maxlength="16">
+                <button id="join-button">Join</button>
+                <div class="username-message">Username requirements:
+                    <ul>
+                        <li>Letters from A to Z</li>
+                        <li>Letters from a to z</li>
+                        <li>Numbers from 0 to 9</li>
+                        <li>Spaces</li>
+                        <li>3-16 characters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over" class="hidden">
+            <div id="game-over-title">Game Over</div>
+            <div id="game-over-winner"><span>You</span> are the winner!</div>
+            <button id="game-over-replay">Play again</button>
+        </div>
+    </div>
+</body>
+
+</html>
